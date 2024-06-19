@@ -1,3 +1,50 @@
 * {
   font-size: 16px;
 }
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/*Navbar styling*/
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/*index Styling*/
+
+body {
+  background-image: url(../images/coffeebackground.jpg);
+  margin: 0;
+  width: 100%;
+}
+
+#home-section {
+  min-height: 50vh;
+}
+
+#home-logo {
+  display: block;
+  height: 45vh;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+
+/* Larger Device Styles */
+@media (min-width: 769px) {
+}
