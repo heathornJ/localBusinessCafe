@@ -14,6 +14,10 @@ h1 {
   font-size: 3em;
 }
 
+h2 {
+  font-size: 2em;
+}
+
 /*Navbar styling*/
 nav {
   display: flex;
@@ -51,7 +55,7 @@ body.index {
 
 /*Gallery Styling*/
 
-#home-gallery-section {
+#home-gallery-background {
   background-color: white;
 }
 
@@ -162,12 +166,13 @@ body.index {
 }
 
 /*about Page Styling*/
+
 body.about {
   background-image: url(../images/coffeebackground.jpg);
 }
 
 #introduction {
-  margin: 1em auto 0 auto;
+  margin: 1em auto;
   width: 90%;
   padding: 0.5em;
   background-color: #aaaaaa90;
@@ -181,28 +186,87 @@ body.about {
 }
 
 /*More Info Styling*/
+#more-info-background {
+  background-color: white;
+}
 
 #more-info {
+  width: 100%;
   padding: 0.2 1em;
-  background-color: white;
 }
 
 #more-info article {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: flex-end;
   padding: 0.5em 1em;
 }
 
-#more-info article img {
-  max-width: 30%;
-  display: inline-block;
+.about-image {
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 200px;
+  min-height: 200px;
+  object-fit: contain;
+  display: block;
 }
 
-#about-food {
-  flex-direction: row-reverse;
+.about-text {
+  width: 100%;
 }
 
 /* Larger Device Styles */
 @media (min-width: 769px) {
+  /*General Styling*/
+  .large-screen {
+    width: 60%;
+    margin: 0 auto;
+  }
+  /*index page styling*/
+
+  /* Slideshow container */
+  .slideshow-container {
+    width: 40%;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+
+  .mySlides img {
+    width: 100%;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+  /*about page styling*/
+
+  #introduction {
+    width: 60%;
+  }
+
+  #more-info article {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .about-image {
+    max-width: 30%;
+    min-width: 100px;
+    min-height: 100px;
+    object-fit: contain;
+    display: inline-block;
+  }
+
+  .about-text {
+    min-width: 100px;
+    flex: 1;
+  }
+
+  #about-food {
+    flex-direction: row-reverse;
+  }
 }
