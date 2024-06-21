@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    
+    <link rel="stylesheet" href="../css/styles.css" />
+
     <script src="../javascript/navbar.js" async></script>
-</head>
-<body>
-        <div id="navbar-placeholder"></div>
-    
-        <!-- Page content -->
-    
-</body>
+  </head>
+  <body class="contact">
+    <div id="navbar-placeholder"></div>
+
+    <main>
+      <h1 id="contact-heading">Contact Us</h1>
+      <div id="contact-background">
+        <section class="large-screen" id="contact-details">
+          <div id="contact-information">
+            <img src="../images/logonotext.png" style="width: 300px" />
+          </div>
+          <form action="mailto:heathornj@gmail.com" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" />
+            <label for="textarea">Message:</label>
+            <textarea rows="4" cols="20"></textarea>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

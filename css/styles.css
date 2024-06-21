@@ -10,8 +10,9 @@ body {
 
 h1 {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 3em;
+  padding-top: 1em;
 }
 
 h2 {
@@ -165,6 +166,13 @@ body.index {
   }
 }
 
+#home-gallery-section article p {
+  width: 70vw;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /*about Page Styling*/
 
 body.about {
@@ -216,6 +224,44 @@ body.about {
   width: 100%;
 }
 
+/*contact page styling*/
+body.contact {
+  background-image: url(../images/coffeebackground.jpg);
+}
+
+#contact-heading {
+  padding-top: 0;
+}
+
+#contact-background {
+  background-color: white;
+  min-height: 100vh;
+}
+
+#contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-information {
+  margin: 2em 1em;
+}
+
+form {
+  background-color: lightblue;
+  padding: 1em;
+}
+
+label {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+input,
+textarea {
+  display: block;
+}
+
 /* Larger Device Styles */
 @media (min-width: 769px) {
   /*General Styling*/
@@ -242,6 +288,11 @@ body.about {
     width: 10px;
     height: 10px;
   }
+
+  #home-gallery-section article p {
+    max-width: 100%;
+  }
+
   /*about page styling*/
 
   #introduction {
@@ -268,5 +319,17 @@ body.about {
 
   #about-food {
     flex-direction: row-reverse;
+  }
+
+  /*contact page styling*/
+
+  #contact-details {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  form {
+    margin: 2em 1em;
   }
 }
