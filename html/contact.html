@@ -14,17 +14,24 @@
     <main>
       <h1 id="contact-heading">Contact Us</h1>
       <div id="contact-background">
+        <!--Flex container for contact info items-->
         <section class="large-screen" id="contact-details">
           <div id="contact-information">
             <img src="../images/logonotext.png" style="width: 300px" />
+            <p>This is some text</p>
+            <ul>
+              <li>Contact 1</li>
+              <li>Contact 2</li>
+              <li>Contact 3</li>
+            </ul>
           </div>
           <form action="mailto:heathornj@gmail.com" method="post">
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" />
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" />
-            <label for="textarea">Message:</label>
-            <textarea rows="4" cols="20"></textarea>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" rows="4" cols="20"></textarea>
           </form>
         </section>
       </div>

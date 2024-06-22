@@ -240,17 +240,27 @@ body.contact {
 
 #contact-details {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
 }
 
 #contact-information {
-  margin: 2em 1em;
+  margin: 2em 1em 1em;
 }
 
 form {
   background-color: lightblue;
+  margin: 2em 1em 1em;
   padding: 1em;
+  max-width: 300px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+label,
+input,
+textarea {
+  width: 100%;
 }
 
 label {
@@ -260,6 +270,36 @@ label {
 input,
 textarea {
   display: block;
+}
+
+/*product page styling*/
+body.products {
+  background-image: url(../images/coffeebackground.jpg);
+}
+
+.products h1 {
+  padding: 0;
+}
+
+#products-background {
+  background-color: white;
+}
+
+.product {
+  margin: 1em auto;
+  width: 80%;
+  padding: 1em;
+  border: solid black 1px;
+  text-align: center;
+}
+
+.product img {
+  text-align: center;
+  width: 100%;
+}
+
+.product-text {
+  text-align: left;
 }
 
 /* Larger Device Styles */
@@ -325,11 +365,12 @@ textarea {
 
   #contact-details {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
   }
 
   form {
     margin: 2em 1em;
+    min-width: 200px;
   }
 }
