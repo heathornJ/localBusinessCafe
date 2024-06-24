@@ -347,9 +347,6 @@ body.menu {
   justify-content: space-between;
 }
 
-.item-text {
-}
-
 /* Larger Device Styles */
 @media (min-width: 769px) {
   /*General Styling*/
@@ -456,5 +453,24 @@ body.menu {
 
   .product-text p {
     margin-bottom: 0;
+  }
+
+  /*menu page styling*/
+
+  #menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .menu-left-side,
+  .menu-right-side {
+    width: 60%;
+  }
+
+  .divider {
+    background-color: black;
+    padding: 0.2em 0.2em;
+    margin: 4em 3em 1em 3em;
   }
 }
