@@ -61,6 +61,10 @@ body.index {
   min-height: 100vh;
 }
 
+#home-gallery-section h1 {
+  color: black;
+}
+
 #home-gallery-section p {
   margin: 0;
   padding: 2em;
@@ -293,6 +297,12 @@ body.products {
   padding: 1em 0;
 }
 
+.product-section h2 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .product {
   margin: 0 auto;
   width: 80%;
@@ -390,6 +400,10 @@ body.products {
   .product-section {
     margin: 0 auto;
     padding: 1em 0;
+  }
+
+  .product-section h2 {
+    width: 100%;
   }
 
   .product {
