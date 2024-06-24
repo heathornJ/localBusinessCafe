@@ -58,6 +58,7 @@ body.index {
 
 #home-gallery-background {
   background-color: white;
+  min-height: 100vh;
 }
 
 #home-gallery-section p {
@@ -196,6 +197,7 @@ body.about {
 /*More Info Styling*/
 #more-info-background {
   background-color: white;
+  height: 100vh;
 }
 
 #more-info {
@@ -283,10 +285,16 @@ body.products {
 
 #products-background {
   background-color: white;
+  min-height: 100vh;
+}
+
+.product-section {
+  margin: 0 auto;
+  padding: 1em 0;
 }
 
 .product {
-  margin: 1em auto;
+  margin: 0 auto;
   width: 80%;
   padding: 1em;
   border: solid black 1px;
@@ -372,5 +380,37 @@ body.products {
   form {
     margin: 2em 1em;
     min-width: 200px;
+  }
+
+  /*products page styling*/
+  .products h1 {
+    padding: 0;
+  }
+
+  .product-section {
+    margin: 0 auto;
+    padding: 1em 0;
+  }
+
+  .product {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .product img {
+    text-align: center;
+    width: 30%;
+    max-width: 500px;
+  }
+
+  .product-text {
+    padding-left: 1em;
+    text-align: left;
+  }
+
+  .product-text p {
+    margin-bottom: 0;
   }
 }
