@@ -329,6 +329,10 @@ body.menu {
   background-color: white;
 }
 
+#menu {
+  padding-bottom: 2em;
+}
+
 .menu h2 {
   text-align: center;
   padding-top: 1em;
