@@ -30,7 +30,7 @@ function addMenuItem(menuItem){
     }
 }
 
-
+//Shorthand for faster product creation
 const f = 'food';
 const d = 'drink';
 const a = 'apparel';

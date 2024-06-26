@@ -36,6 +36,7 @@ function addMenuItem(menuItem){
     }
 }
 
+//Shorthand for faster product creation
 const h = 'hot';
 const c = 'cold';
 const m = 'meal';
