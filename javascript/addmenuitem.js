@@ -36,23 +36,43 @@ function addMenuItem(menuItem){
     }
 }
 
+const h = 'hot';
+const c = 'cold';
+const m = 'meal';
+const s = 'snack';
+
 //Hot Drinks
-addMenuItem(menuItemFactory('hot', 'Americano', 'It\'s that good bean juice.', '3.00'));
-addMenuItem(menuItemFactory('hot', 'Americano', 'It\'s that good bean juice.', '3.00'));
-addMenuItem(menuItemFactory('hot', 'Americano', 'It\'s that good bean juice.', '3.00'));
-addMenuItem(menuItemFactory('hot', 'Americano', 'It\'s that good bean juice.', '3.00'));
+const hotDrinks = [
+    menuItemFactory(h, 'Americano', 'It\'s that good bean juice.', '3.00'),
+    menuItemFactory(h, 'Americano', 'It\'s that good bean juice.', '3.00'),
+    menuItemFactory(h, 'Americano', 'It\'s that good bean juice.', '3.00'),
+    menuItemFactory(h, 'Americano', 'It\'s that good bean juice.', '3.00')
+];
+
 
 //Cold Drinks
-addMenuItem(menuItemFactory('cold', 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'));
-addMenuItem(menuItemFactory('cold', 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'));
-addMenuItem(menuItemFactory('cold', 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'));
-addMenuItem(menuItemFactory('cold', 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'));
+const coldDrinks = [
+    menuItemFactory(c, 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'),
+    menuItemFactory(c, 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'),
+    menuItemFactory(c, 'Iced Coffee', 'It\'s that cold bean juice.', '3.00'),
+    menuItemFactory(c, 'Iced Coffee', 'It\'s that cold bean juice.', '3.00')
+];
+ 
 
 //Meals
-addMenuItem(menuItemFactory('meal', 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'));
-addMenuItem(menuItemFactory('meal', 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'));
-addMenuItem(menuItemFactory('meal', 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'));
-addMenuItem(menuItemFactory('meal', 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'));
+const meals = [
+    menuItemFactory(m, 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'),
+    menuItemFactory(m, 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'),
+    menuItemFactory(m, 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00'),
+    menuItemFactory(m, 'Cheese Sandwich', 'It\'s that good cheese slice.', '3.00')
+];
 
 //Snacks
-addMenuItem(menuItemFactory('snack', 'Cracker', 'It\'s a single, dry, cracker', '3.00'));
+const snacks = [
+    menuItemFactory(s, 'Cracker', 'It\'s a single, dry, cracker', '3.00')
+];
+ 
+hotDrinks.forEach(addMenuItem);
+coldDrinks.forEach(addMenuItem);
+meals.forEach(addMenuItem);
+snacks.forEach(addMenuItem);

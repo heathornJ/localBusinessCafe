@@ -30,11 +30,26 @@ function addMenuItem(menuItem){
     }
 }
 
+
+const f = 'food';
+const d = 'drink';
+const a = 'apparel';
+
 //Food products
-addMenuItem(productItemFactory('food', 'Cake', 'A nice slice of cake.', '../images/logonotext.png'));
+const foodProducts = [
+    productItemFactory(f, 'Cake', 'A nice slice of cake.', '../images/logonotext.png')
+]
 
 //Drink products
-addMenuItem(productItemFactory('drink', 'Coffee Beans', 'Our famous blend.', '../images/logonotext.png'));
+const drinkProducts = [
+    productItemFactory(d, 'Coffee Beans', 'Our famous blend.', '../images/logonotext.png')
+];
 
 //Apparel products
-addMenuItem(productItemFactory('apparel', 'T-Shirt', 'The Local Business Cafe branded T-Shirt.', '../images/logonotext.png'));
+const apparelProducts = [
+    productItemFactory(a, 'T-Shirt', 'The Local Business Cafe branded T-Shirt.', '../images/logonotext.png')
+];
+
+foodProducts.forEach(addMenuItem);
+drinkProducts.forEach(addMenuItem);
+apparelProducts.forEach(addMenuItem);
