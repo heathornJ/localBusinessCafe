@@ -59,16 +59,17 @@ nav li {
   text-align: right;
 }
 
-.openbtn {
+#openbtn {
   position: absolute;
   top: 4px;
   right: 30px;
   font-size: 3em;
   color: var(--color1);
   text-decoration: none;
+  transition: 0.3s;
 }
 
-nav .closebtn {
+nav #closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -92,11 +93,15 @@ body.index {
   padding: 12vh 0;
 }
 
+#index-bottom {
+  padding: 5em 0;
+}
+
 /*Gallery Styling*/
 
 #home-gallery-background {
   background-color: white;
-  min-height: 100vh;
+  min-height: fit-content;
 }
 
 #home-gallery-section h1 {
@@ -216,6 +221,41 @@ body.index {
   padding-right: 0;
 }
 
+#app-info {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: fit-content;
+  width: 100%;
+  background-color: #a63f3d;
+}
+
+#image-container {
+  aspect-ratio: 1/0.75;
+  width: 100%;
+  max-height: 576px;
+  object-fit: cover; /* Crop the image to fill the container */
+}
+
+#app-image {
+  height: 100%; /* Fit the container height */
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover; /* Crop the image to fill the container */
+}
+
+#app-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: none;
+  text-align: center;
+  height: 220px;
+  padding: 0 2em;
+}
+
 /*about Page Styling*/
 
 body.about {
@@ -224,9 +264,8 @@ body.about {
 
 #introduction {
   margin: 1em auto;
-  width: 90%;
+  width: 80%;
   padding: 0.5em;
-  background-color: #aaaaaa90;
   border-radius: 10px;
 }
 
@@ -239,7 +278,7 @@ body.about {
 /*More Info Styling*/
 #more-info-background {
   background-color: white;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #more-info {
@@ -247,7 +286,7 @@ body.about {
   padding: 0.2 1em;
 }
 
-#more-info article {
+.about-article {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -414,12 +453,17 @@ body.menu {
     display: inline-block;
   }
 
-  .closebtn {
+  #closebtn {
+    display: none;
+  }
+
+  #openbtn {
     display: none;
   }
 
   /*General Styling*/
   .large-screen {
+    max-width: 1600px;
     width: 60%;
     margin: 0 auto;
   }
@@ -449,19 +493,30 @@ body.menu {
 
   /*about page styling*/
 
+  #introduction-container {
+    margin: 1em auto;
+    padding-left: 5em;
+    max-width: 1202px;
+  }
   #introduction {
+    margin: 0;
     width: 60%;
+    max-width: 700px;
   }
 
-  #more-info article {
-    width: 60%;
+  #more-info {
+    padding-top: 3em;
+  }
+
+  .about-article {
+    width: 80%;
+    max-width: 900px;
     margin: 0 auto;
   }
 
   .about-image {
-    max-width: 30%;
-    min-width: 100px;
-    min-height: 100px;
+    margin-right: 1em;
+    width: 250px;
     object-fit: contain;
     display: inline-block;
   }
@@ -473,6 +528,11 @@ body.menu {
 
   #about-food {
     flex-direction: row-reverse;
+  }
+
+  #about-food .about-image {
+    margin-right: 0;
+    margin-left: 1em;
   }
 
   /*contact page styling*/
