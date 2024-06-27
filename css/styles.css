@@ -23,6 +23,10 @@ h2 {
   font-size: 2em;
 }
 
+p {
+  max-width: 700px;
+}
+
 /*Navbar styling*/
 nav {
   background-color: var(--color1);
@@ -221,7 +225,7 @@ body.index {
   padding-right: 0;
 }
 
-#app-info {
+#extra-info {
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -239,14 +243,14 @@ body.index {
   object-fit: cover; /* Crop the image to fill the container */
 }
 
-#app-image {
+#extra-info-image {
   height: 100%; /* Fit the container height */
   width: 100%;
   min-height: 400px;
   object-fit: cover; /* Crop the image to fill the container */
 }
 
-#app-text {
+#extra-info-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -471,6 +475,7 @@ body.menu {
 
   /* Slideshow container */
   .slideshow-container {
+    min-width: 400px;
     width: 40%;
   }
   /* Hide the images by default */
@@ -491,7 +496,7 @@ body.menu {
     max-width: 100%;
   }
 
-  #app-info {
+  #extra-info {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -509,7 +514,7 @@ body.menu {
     object-fit: cover; /* Crop the image to fill the container */
   }
 
-  #app-image {
+  #extra-info-image {
     height: 100%; /* Fit the container height */
     width: 100%;
     min-height: 400px;
@@ -517,7 +522,7 @@ body.menu {
     display: block;
   }
 
-  #app-text {
+  #extra-info-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
