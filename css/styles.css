@@ -491,6 +491,44 @@ body.menu {
     max-width: 100%;
   }
 
+  #app-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: fit-content;
+    width: 100%;
+    background-color: #a63f3d;
+  }
+
+  #image-container {
+    aspect-ratio: 4/3;
+    width: 50%;
+    max-height: 556px;
+    object-fit: cover; /* Crop the image to fill the container */
+  }
+
+  #app-image {
+    height: 100%; /* Fit the container height */
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover; /* Crop the image to fill the container */
+    display: block;
+  }
+
+  #app-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    min-width: none;
+    text-align: center;
+    max-height: 300px;
+    height: auto;
+    padding: 0 2em;
+  }
+
   /*about page styling*/
 
   #introduction-container {
