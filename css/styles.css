@@ -273,6 +273,10 @@ body.about {
   border-radius: 10px;
 }
 
+#introduction p {
+  color: white;
+}
+
 .about h1 {
   color: white;
   text-align: left;
