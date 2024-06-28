@@ -21,6 +21,7 @@ h1 {
 
 h2 {
   font-size: 2em;
+  color: var(--color1);
 }
 
 p {
@@ -344,13 +345,13 @@ body.contact {
 }
 
 .spacer {
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 .question-container {
   position: relative;
   max-width: 700px;
   margin: 0 auto;
-  background: green;
   transition: 0.5s;
 }
 
@@ -367,16 +368,19 @@ body.contact {
 .question-label h3 {
   display: inline-block;
   padding-left: 1em;
+  color: var(--color1);
 }
 
 .question-label {
+  margin-top: 0;
+  background-color: #e5e5e5;
   color: black;
   position: relative;
 }
 
 .answer-container {
   position: relative;
-  background: gray;
+  background: #f1f1f1;
   height: 0;
   overflow: hidden;
 }
