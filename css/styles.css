@@ -205,7 +205,7 @@ body.index {
   transition: background-color 0.6s ease;
 }
 
-.active,
+.activeImage,
 .dot:hover {
   background-color: #717171;
 }
@@ -339,6 +339,12 @@ body.contact {
   padding-top: 0;
 }
 
+/* contact faq accordion styles - structure via https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/ */
+
+#faq {
+  padding: 0 1em;
+}
+
 #faq h2 {
   max-width: 700px;
   margin: 0 auto;
@@ -352,7 +358,6 @@ body.contact {
   position: relative;
   max-width: 700px;
   margin: 0 auto;
-  transition: 0.5s;
 }
 
 .question-label::before {
@@ -366,12 +371,14 @@ body.contact {
 }
 
 .question-label h3 {
+  width: 100%;
   display: inline-block;
   padding-left: 1em;
   color: var(--color1);
 }
 
 .question-label {
+  border-radius: 10px;
   margin-top: 0;
   background-color: #e5e5e5;
   color: black;
@@ -396,10 +403,18 @@ body.contact {
   right: 8px;
 }
 
+.question-container.active .question-label {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .question-container.active .answer-container {
   height: fit-content;
-  overflow: hidden;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
+
+/*contact info and form styling*/
 
 #contact-background {
   background-color: white;

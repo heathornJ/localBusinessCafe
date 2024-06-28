@@ -33,10 +33,10 @@ function showSlides(n) {
   }
   //Ensures previous dot is no longer styled with "active" class.
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+    dots[i].className = dots[i].className.replace(" activeImage", "");
   }
   //Displays the image.
   slides[slideIndex - 1].style.display = "block";
   //Sets styling for correct circle.
-  dots[slideIndex - 1].className += " active";
+  dots[slideIndex - 1].className += " activeImage";
 }
