@@ -343,13 +343,58 @@ body.contact {
   margin: 0 auto;
 }
 
+.spacer {
+  margin-bottom: 1em;
+}
 .question-container {
+  position: relative;
   max-width: 700px;
   margin: 0 auto;
+  background: green;
+  transition: 0.5s;
+}
+
+.question-label::before {
+  content: "+";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font-size: 1.75em;
+}
+
+.question-label h3 {
+  display: inline-block;
+  padding-left: 1em;
 }
 
 .question-label {
   color: black;
+  position: relative;
+}
+
+.answer-container {
+  position: relative;
+  background: gray;
+  height: 0;
+  overflow: hidden;
+}
+
+.answer-container p {
+  margin: 0;
+  padding: 1em 1.5em;
+}
+
+.question-container.active .question-label::before {
+  content: "-";
+  top: 44%;
+  right: 8px;
+}
+
+.question-container.active .answer-container {
+  height: fit-content;
+  overflow: hidden;
 }
 
 #contact-background {
