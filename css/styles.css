@@ -88,13 +88,14 @@ body.index {
 
 #home-section {
   min-height: 50vh;
+  background-color: #00000077;
 }
 
 #home-logo {
   display: block;
   height: 50vh;
   margin: 0 auto;
-  padding: 12vh 0;
+  padding: 5vh 0;
 }
 
 #index-bottom {
@@ -108,13 +109,18 @@ body.index {
   min-height: fit-content;
 }
 
+#home-gallery-section {
+  padding-top: 0.1em;
+}
+
 #home-gallery-section h1 {
   color: black;
 }
 
-#home-gallery-section p {
-  margin: 0;
-  padding: 2em;
+#gallery-text {
+  margin: 0 auto;
+  padding-top: 3em;
+  max-width: 700px;
 }
 
 /* Slideshow container */
@@ -225,6 +231,10 @@ body.index {
   padding-right: 0;
 }
 
+#index-bottom-background {
+  background-color: #00000077;
+}
+
 #extra-info {
   display: flex;
   flex-direction: column-reverse;
@@ -236,6 +246,10 @@ body.index {
   background-color: #a63f3d;
 }
 
+#extra-info-text {
+  color: white;
+}
+
 #image-container {
   aspect-ratio: 1/0.75;
   width: 100%;
@@ -244,7 +258,7 @@ body.index {
 }
 
 #extra-info-image {
-  height: 100%; /* Fit the container height */
+  height: 100%;
   width: 100%;
   min-height: 400px;
   object-fit: cover; /* Crop the image to fill the container */
@@ -275,11 +289,11 @@ body.about {
 
 #introduction p {
   color: white;
+  text-align: center;
 }
 
 .about h1 {
   color: white;
-  text-align: left;
   margin: 0.2em 0;
 }
 
@@ -299,12 +313,12 @@ body.about {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-end;
-  padding: 0.5em 1em;
+  padding: 2em 1em;
 }
 
 .about-image {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 400px;
+  max-height: 400px;
   min-width: 200px;
   min-height: 200px;
   object-fit: contain;
@@ -331,7 +345,7 @@ body.contact {
 
 #contact-details {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -344,7 +358,7 @@ form {
   margin: 2em 1em 1em;
   padding: 1em;
   max-width: 300px;
-  width: 50%;
+  width: 90%;
   border-radius: 10px;
 }
 
@@ -352,6 +366,12 @@ label,
 input,
 textarea {
   width: 100%;
+}
+
+textarea {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 10em;
 }
 
 label {
@@ -444,7 +464,7 @@ body.menu {
     display: flex;
     justify-content: center;
     height: fit-content;
-    width: 100vw;
+    width: 100%;
     overflow-x: visible;
     padding-top: 0;
     transition: none;
@@ -496,8 +516,9 @@ body.menu {
     height: 10px;
   }
 
-  #home-gallery-section article p {
-    max-width: 100%;
+  #home-gallery-section {
+    padding-top: 0.1em;
+    padding-bottom: 3em;
   }
 
   #extra-info {
@@ -513,6 +534,7 @@ body.menu {
 
   #image-container {
     aspect-ratio: 4/3;
+    min-width: 300px;
     width: 50%;
     max-height: 556px;
     object-fit: cover; /* Crop the image to fill the container */
@@ -540,13 +562,8 @@ body.menu {
 
   /*about page styling*/
 
-  #introduction-container {
-    margin: 1em auto;
-    padding-left: 5em;
-    max-width: 1202px;
-  }
   #introduction {
-    margin: 0;
+    margin: 0 auto;
     width: 60%;
     max-width: 700px;
   }
@@ -593,6 +610,10 @@ body.menu {
   form {
     margin: 2em 1em;
     min-width: 200px;
+    padding: 1em;
+    max-width: 300px;
+    width: 50%;
+    border-radius: 10px;
   }
 
   /*products page styling*/
