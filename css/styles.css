@@ -338,6 +338,20 @@ body.contact {
   padding-top: 0;
 }
 
+#faq h2 {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.question-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.question-label {
+  color: black;
+}
+
 #contact-background {
   background-color: white;
   min-height: 100vh;
