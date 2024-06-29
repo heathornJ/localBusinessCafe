@@ -17,15 +17,23 @@ h1 {
   color: white;
   font-size: 3em;
   padding-top: 0;
+  margin: 0.2em 0;
 }
 
 h2 {
   font-size: 2em;
   color: var(--color1);
+  margin: 0 auto;
 }
 
 p {
   max-width: 700px;
+}
+
+.heading-container{
+  width: 100%;
+  padding: 1em 0;
+  background-color: #00000077;
 }
 
 /*Navbar styling*/
@@ -101,18 +109,20 @@ body.index {
 
 #index-bottom {
   padding: 5em 0;
+  background-color: #f9f9f9;
 }
 
 /*Gallery Styling*/
 
 #home-gallery-background {
-  background-color: white;
+  background-color: #00000077;
   min-height: fit-content;
 }
 
 #home-gallery-section {
   padding-top: 0.1em;
   padding-bottom: 3em;
+  background-color: #f9f9f9;
 }
 
 #home-gallery-section h1 {
@@ -121,7 +131,8 @@ body.index {
 
 #gallery-text {
   margin: 0 auto;
-  padding-top: 3em;
+  width: 100%;
+  padding: 3em 1em 1em 1em;
   max-width: 700px;
 }
 
@@ -226,13 +237,6 @@ body.index {
   }
 }
 
-#home-gallery-section article p {
-  width: 70vw;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0;
-}
-
 #index-bottom-background {
   background-color: #00000077;
 }
@@ -290,25 +294,20 @@ body.about {
   border-radius: 10px;
 }
 
-#introduction p {
-  color: white;
-  text-align: center;
-}
-
 .about h1 {
   color: white;
-  margin: 0.2em 0;
 }
 
 /*More Info Styling*/
 #more-info-background {
-  background-color: white;
+  background-color: #00000077;
   min-height: 100vh;
 }
 
 #more-info {
   width: 100%;
   padding: 0.2 1em;
+  background-color: #f9f9f9;
 }
 
 .about-article {
@@ -337,20 +336,16 @@ body.contact {
   background-image: url(../images/coffeebackground.jpg);
 }
 
-#contact-heading {
-  padding-top: 0;
-}
-
 /* contact faq accordion styles - structure via https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/ */
 
 #faq {
-  padding: 0 1em;
+  padding: 0 1em 0.1em 0;
+  background-color: #f9f9f9;
 }
 
 #faq h2 {
   max-width: 700px;
   padding: 1em 0 0.5em 0;
-  margin: 0 auto;
 }
 
 .spacer {
@@ -390,7 +385,7 @@ body.contact {
 
 .answer-container {
   position: relative;
-  background: #f1f1f1;
+  background: #f5f5f5;
   height: 0;
   overflow: hidden;
 }
@@ -420,7 +415,7 @@ body.contact {
 /*contact info and form styling*/
 
 #contact-background {
-  background-color: white;
+  background-color: #00000077;
   min-height: 100vh;
 }
 
@@ -428,6 +423,7 @@ body.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #f9f9f9;
 }
 
 #contact-information {
@@ -445,7 +441,6 @@ form {
 
 form h2 {
   text-align: center;
-  margin: 0 auto;
   padding-bottom: 0.5em;
   color: white;
 }
@@ -477,18 +472,15 @@ body.products {
   background-image: url(../images/coffeebackground.jpg);
 }
 
-.products h1 {
-  padding: 0;
-}
-
 #products-background {
-  background-color: white;
+  background-color: #00000077;
   min-height: 100vh;
 }
 
 .product-section {
   margin: 0 auto;
   padding: 1em 0;
+  background: #f9f9f9;
 }
 
 .product-section h2 {
@@ -519,11 +511,12 @@ body.menu {
 }
 
 #menu-background {
-  background-color: white;
+  background-color: #00000077;
 }
 
 #menu {
   padding-bottom: 2em;
+  background: #f9f9f9;
 }
 
 .menu h2 {
@@ -608,23 +601,30 @@ body.menu {
     padding-top: 0.1em;
   }
 
+  #index-bottom-background{
+    padding-bottom: 2em;
+  }
+
   #extra-info {
     display: flex;
+    flex-wrap: wrap-reverse;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     height: fit-content;
-    width: 100%;
+    width: 90%;
     background-color: #a63f3d;
   }
 
   #image-container {
     aspect-ratio: 4/3;
     min-width: 300px;
-    width: 50%;
+    width: 100%;
+    max-width: 100%;
     max-height: 556px;
     object-fit: cover; /* Crop the image to fill the container */
+    flex: 2
   }
 
   #extra-info-image {
@@ -640,7 +640,7 @@ body.menu {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    min-width: none;
+    min-width: 200px;
     text-align: center;
     max-height: 300px;
     height: auto;
@@ -655,12 +655,17 @@ body.menu {
     max-width: 700px;
   }
 
+  #more-info-background {
+    padding-bottom: 2em;
+  }
+
   #more-info {
-    padding-top: 3em;
+    width: 80%;
+    padding-top: 2em;
   }
 
   .about-article {
-    width: 80%;
+    width: 95%;
     max-width: 900px;
     margin: 0 auto;
   }
@@ -688,6 +693,10 @@ body.menu {
 
   /*contact page styling*/
 
+  #contact-background{
+    padding-bottom: 2em;
+  }
+
   #contact-details {
     flex-direction: row;
     justify-content: center;
@@ -703,13 +712,14 @@ body.menu {
   }
 
   /*products page styling*/
-  .products h1 {
-    padding: 0;
+
+  #products-background {
+    padding-bottom: 2em;
   }
 
   .product-section {
     margin: 0 auto;
-    padding: 1em 0;
+    padding: 1em 1em;
   }
 
   .product-section h2 {
@@ -739,6 +749,10 @@ body.menu {
   }
 
   /*menu page styling*/
+
+  #menu-background{
+    padding-bottom: 2em
+  }
 
   #menu {
     display: flex;
