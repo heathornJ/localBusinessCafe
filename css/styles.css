@@ -112,6 +112,7 @@ body.index {
 
 #home-gallery-section {
   padding-top: 0.1em;
+  padding-bottom: 3em;
 }
 
 #home-gallery-section h1 {
@@ -247,7 +248,8 @@ body.index {
   background-color: #a63f3d;
 }
 
-#extra-info-text {
+#extra-info-text,
+#extra-info-text h2 {
   color: white;
 }
 
@@ -604,7 +606,6 @@ body.menu {
 
   #home-gallery-section {
     padding-top: 0.1em;
-    padding-bottom: 3em;
   }
 
   #extra-info {

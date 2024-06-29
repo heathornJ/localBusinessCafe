@@ -1,55 +1,93 @@
-const productItemFactory = (type, itemName, description, graphic) =>{
-    return{
-type,
-itemName,
-description,
-graphic
-    }
-}
+const product = (type, itemName, description, graphic) => {
+  return {
+    type,
+    itemName,
+    description,
+    graphic,
+  };
+};
 
-function addMenuItem(menuItem){
-    //Creates the li element
-    const articleItem = document.createElement('article');
-    articleItem.classList.add('product');
+function addItem(product) {
+  //Creates the li element
+  const articleItem = document.createElement("article");
+  articleItem.classList.add("product");
 
-    //Sets the content of the li element
-    articleItem.innerHTML = `
-        <img src="${menuItem.graphic}">
+  //Sets the content of the li element
+  articleItem.innerHTML = `
+        <img src="${product.graphic}">
               <div class="product-text">
-                <h3>${menuItem.itemName}</h2>
-                <p>${menuItem.description}</p>
+                <h3>${product.itemName}</h2>
+                <p>${product.description}</p>
               </div>
     `;
 
-    if (menuItem.type === 'food'){
-        document.querySelector('#product-food .product-section').appendChild(articleItem);
-    } else if (menuItem.type === 'drink'){
-        document.querySelector('#product-drink .product-section').appendChild(articleItem);
-    } else if (menuItem.type === 'apparel'){
-        document.querySelector('#product-apparel .product-section').appendChild(articleItem);
-    }
+  if (product.type === "coffee") {
+    document
+      .querySelector("#product-coffee .product-section")
+      .appendChild(articleItem);
+  } else if (product.type === "merchandise") {
+    document
+      .querySelector("#product-merchandise .product-section")
+      .appendChild(articleItem);
+  } else if (product.type === "gift") {
+    document
+      .querySelector("#product-gift .product-section")
+      .appendChild(articleItem);
+  }
 }
 
 //Shorthand for faster product creation
-const f = 'food';
-const d = 'drink';
-const a = 'apparel';
+const c = "coffee";
+const m = "merchandise";
+const g = "gift";
 
-//Food products
-const foodProducts = [
-    productItemFactory(f, 'Cake', 'A nice slice of cake.', '../images/logonotext.png')
-]
-
-//Drink products
-const drinkProducts = [
-    productItemFactory(d, 'Coffee Beans', 'Our famous blend.', '../images/logonotext.png')
+const coffeeProducts = [
+  product(
+    c,
+    "Coffee Beans - 500g",
+    "Our famous blend, available for you to take home.",
+    "../images/logonotext.png"
+  ),
+  product(c,
+  "Coffee Beans - 1kg",
+  "Our famous blend, available for you to take home.",
+  "../images/logonotext.png"),
+  product(c,
+  "Coffee Beans - 2kg",
+  "Our famous blend, available for you to take home.",
+  "../images/logonotext.png")
 ];
 
-//Apparel products
-const apparelProducts = [
-    productItemFactory(a, 'T-Shirt', 'The Local Business Cafe branded T-Shirt.', '../images/logonotext.png')
+const merchandiseProducts = [
+  product(
+    m,
+    "T-Shirt",
+    "The Local Business Cafe branded T-Shirt.",
+    "../images/logonotext.png"
+  ),
+  product(m,
+  "Hoodie",
+  "The Local Business Cafe branded hoodie.",
+  "../images/logonotext.png"),
+  product(m,
+  "Cap",
+  "The Local Business Cafe branded cap.",
+  "../images/logonotext.png")
 ];
 
-foodProducts.forEach(addMenuItem);
-drinkProducts.forEach(addMenuItem);
-apparelProducts.forEach(addMenuItem);
+const giftProducts = [
+  product(
+    g,
+    "Gift Card",
+    "Nothing says 'Thank you', 'I love you', or 'Good job!' like free coffee. Give the gift of coffee with our gift card.",
+    "../images/logonotext.png"
+  ),
+  product(g,
+  "Gift Set",
+  "Give the gift of coffee with a mug, 500g of coffee.",
+  "../images/logonotext.png"),
+];
+
+coffeeProducts.forEach(addItem);
+merchandiseProducts.forEach(addItem);
+giftProducts.forEach(addItem);
