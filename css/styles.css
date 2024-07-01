@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "rubik_mono_oneregular";
+  src: url("../fonts/rubikmonoone-regular-webfont.woff2") format("woff2"),
+    url("../fonts/rubikmonoone-regular-webfont.woff") format("woff"),
+    url("../fonts/rubikmonoone-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "archivo_narrowregular";
+  src: url("../fonts/archivonarrow-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("../fonts/archivonarrow-variablefont_wght-webfont.woff") format("woff"),
+    url("../fonts/archivonarrow-variablefont_wght-webfont.ttf")
+      format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --color1: #a63f3d;
 }
@@ -13,6 +33,8 @@ body {
 }
 
 h1 {
+  font-family: "rubik_mono_oneregular", Arial, Helvetica, sans-serif;
+  font-weight: 200;
   text-align: center;
   color: white;
   font-size: 3em;
@@ -21,16 +43,27 @@ h1 {
 }
 
 h2 {
+  font-family: "rubik_mono_oneregular", Arial, Helvetica, sans-serif;
   font-size: 2em;
   color: var(--color1);
   margin: 0 auto;
 }
 
+h3 {
+  font-family: "rubik_mono_oneregular", Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
 p {
+  font-family: "archivo_narrowregular";
   max-width: 700px;
 }
 
-.heading-container{
+a {
+  font-family: "rubik_mono_oneregular";
+}
+
+.heading-container {
   width: 100%;
   padding: 1em 0;
   background-color: #00000077;
@@ -96,15 +129,17 @@ body.index {
 }
 
 #home-section {
-  min-height: 50vh;
+  min-height: 100vh;
   background-color: #00000077;
 }
 
 #home-logo {
   display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   height: 50vh;
-  margin: 0 auto;
-  padding: 5vh 0;
 }
 
 #index-bottom {
@@ -121,12 +156,12 @@ body.index {
 
 #home-gallery-section {
   padding-top: 0.1em;
-  padding-bottom: 3em;
   background-color: #f9f9f9;
 }
 
 #home-gallery-section h1 {
   color: black;
+  padding: 1em 0 0.5em 0;
 }
 
 #gallery-text {
@@ -329,6 +364,16 @@ body.about {
 
 .about-text {
   width: 100%;
+  text-align: center;
+}
+
+.about-text h2 {
+  padding-top: 0.5em;
+}
+
+.about-text p {
+  text-align: left;
+  margin-bottom: 0;
 }
 
 /*contact page styling*/
@@ -339,7 +384,7 @@ body.contact {
 /* contact faq accordion styles - structure via https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/ */
 
 #faq {
-  padding: 0 1em 0.1em 0;
+  padding: 0 1em 0.1em 1em;
   background-color: #f9f9f9;
 }
 
@@ -487,6 +532,7 @@ body.products {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 0.5em;
 }
 
 .product {
@@ -537,6 +583,14 @@ body.menu {
   justify-content: space-between;
 }
 
+.item-text h3 {
+  margin-bottom: 0.1em;
+}
+
+.item-text p {
+  margin-top: 0.1em;
+}
+
 /* Larger Device Styles */
 @media (min-width: 769px) {
   /*navbar styling*/
@@ -578,6 +632,10 @@ body.menu {
   }
   /*index page styling*/
 
+  #home-logo {
+    height: 70vh;
+  }
+
   /* Slideshow container */
   .slideshow-container {
     min-width: 400px;
@@ -601,7 +659,7 @@ body.menu {
     padding-top: 0.1em;
   }
 
-  #index-bottom-background{
+  #index-bottom-background {
     padding-bottom: 2em;
   }
 
@@ -624,7 +682,7 @@ body.menu {
     max-width: 100%;
     max-height: 556px;
     object-fit: cover; /* Crop the image to fill the container */
-    flex: 2
+    flex: 2;
   }
 
   #extra-info-image {
@@ -655,13 +713,9 @@ body.menu {
     max-width: 700px;
   }
 
-  #more-info-background {
-    padding-bottom: 2em;
-  }
-
   #more-info {
-    width: 80%;
-    padding-top: 2em;
+    width: 60%;
+    padding: 2em 0;
   }
 
   .about-article {
@@ -678,6 +732,7 @@ body.menu {
   }
 
   .about-text {
+    text-align: left;
     min-width: 100px;
     flex: 1;
   }
@@ -693,7 +748,12 @@ body.menu {
 
   /*contact page styling*/
 
-  #contact-background{
+  #faq {
+    padding: 0 0 0.1em 0;
+    background-color: #f9f9f9;
+  }
+
+  #contact-background {
     padding-bottom: 2em;
   }
 
@@ -750,8 +810,8 @@ body.menu {
 
   /*menu page styling*/
 
-  #menu-background{
-    padding-bottom: 2em
+  #menu-background {
+    min-height: 100vh;
   }
 
   #menu {
