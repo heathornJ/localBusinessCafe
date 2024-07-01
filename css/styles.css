@@ -106,7 +106,7 @@ nav li {
 }
 
 #openbtn {
-  position: absolute;
+  position: fixed;
   top: 4px;
   right: 30px;
   font-size: 3em;
@@ -389,6 +389,7 @@ body.contact {
 }
 
 #faq h2 {
+  text-align: center;
   max-width: 700px;
   padding: 1em 0 0.5em 0;
 }
@@ -414,8 +415,9 @@ body.contact {
 }
 
 .question-label h3 {
-  width: 100%;
   display: inline-block;
+  font-family: "archivo_narrowregular";
+  width: 100%;
   padding-left: 1em;
   color: var(--color1);
 }
@@ -475,6 +477,16 @@ body.contact {
   margin: 2em 1em 1em;
 }
 
+#contact-information p,
+#contact-information li {
+  text-align: center;
+}
+
+#contact-information ul {
+  list-style: none;
+  padding: 0;
+}
+
 form {
   background-color: var(--color1);
   margin: 2em auto 1em;
@@ -485,6 +497,7 @@ form {
 }
 
 form h2 {
+  font-family: "archivo_narrowregular";
   text-align: center;
   padding-bottom: 0.5em;
   color: white;
@@ -493,6 +506,7 @@ form h2 {
 label,
 input,
 textarea {
+  font-family: "archivo_narrowregular";
   width: 100%;
 }
 
@@ -522,6 +536,10 @@ body.products {
   min-height: 100vh;
 }
 
+#product-coffee h2 {
+  padding-top: 1em;
+}
+
 .product-section {
   margin: 0 auto;
   padding: 1em 0;
@@ -529,7 +547,8 @@ body.products {
 }
 
 .product-section h2 {
-  width: 80%;
+  width: 95%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 0.5em;
@@ -537,7 +556,8 @@ body.products {
 
 .product {
   margin: 0 auto;
-  width: 80%;
+  width: 95%;
+  max-width: 900px;
   padding: 1em;
   text-align: center;
 }
@@ -583,12 +603,17 @@ body.menu {
   justify-content: space-between;
 }
 
-.item-text h3 {
+.item-text {
+  max-width: 700px;
+}
+
+.item-name {
   margin-bottom: 0.1em;
 }
 
-.item-text p {
+.item-description {
   margin-top: 0.1em;
+  padding-right: 1em;
 }
 
 /* Larger Device Styles */
@@ -751,6 +776,10 @@ body.menu {
   #faq {
     padding: 0 0 0.1em 0;
     background-color: #f9f9f9;
+  }
+
+  #faq h2 {
+    text-align: left;
   }
 
   #contact-background {
