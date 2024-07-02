@@ -32,8 +32,14 @@ body {
   width: 100%;
 }
 
-h1 {
+h1,
+h2,
+h3,
+a {
   font-family: "fjallaOne-regular", Arial, Helvetica, sans-serif;
+}
+
+h1 {
   font-weight: 200;
   text-align: center;
   color: white;
@@ -43,14 +49,12 @@ h1 {
 }
 
 h2 {
-  font-family: "fjallaOne-regular", Arial, Helvetica, sans-serif;
   font-size: 2em;
   color: var(--color1);
   margin: 0 auto;
 }
 
 h3 {
-  font-family: "fjallaOne-regular", Arial, Helvetica, sans-serif;
   font-size: 1.2em;
 }
 
@@ -58,10 +62,6 @@ p,
 li {
   font-family: "archivo_narrowregular";
   max-width: 700px;
-}
-
-a {
-  font-family: "fjallaOne-regular";
 }
 
 .heading-container {
@@ -291,7 +291,6 @@ body.index {
   position: relative;
   margin: 0;
   top: 50%;
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -348,7 +347,7 @@ body.index {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: none;
+  min-width: 0;
   text-align: center;
   height: 220px;
   padding: 0 2em;
@@ -372,7 +371,7 @@ body.about {
 
 #more-info {
   width: 100%;
-  padding: 0.2 1em;
+  padding: 0.2em 1em;
   background-color: #f9f9f9;
 }
 
