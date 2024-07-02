@@ -46,16 +46,16 @@ const coffeeProducts = [
     c,
     "Coffee Beans - 500g",
     "Our famous blend, available for you to take home.",
-    "../images/logonotext.png"
+    "../images/coffeebag.png"
   ),
   product(c,
   "Coffee Beans - 1kg",
   "Our famous blend, available for you to take home.",
-  "../images/logonotext.png"),
+  "../images/coffeebag.png"),
   product(c,
   "Coffee Beans - 2kg",
   "Our famous blend, available for you to take home.",
-  "../images/logonotext.png")
+  "../images/coffeebag.png")
 ];
 
 const merchandiseProducts = [
@@ -63,16 +63,16 @@ const merchandiseProducts = [
     m,
     "T-Shirt",
     "The Local Business Cafe branded T-Shirt.",
-    "../images/logonotext.png"
+    "../images/shirt.png"
   ),
   product(m,
   "Hoodie",
   "The Local Business Cafe branded hoodie.",
-  "../images/logonotext.png"),
+  "../images/hoodie.png"),
   product(m,
   "Cap",
   "The Local Business Cafe branded cap.",
-  "../images/logonotext.png")
+  "../images/cap.png")
 ];
 
 const giftProducts = [
@@ -80,12 +80,12 @@ const giftProducts = [
     g,
     "Gift Card",
     "Nothing says 'Thank you', 'I love you', or 'Good job!' like free coffee. Give the gift of coffee with our gift card.",
-    "../images/logonotext.png"
+    "../images/giftcard.png"
   ),
   product(g,
   "Gift Set",
-  "Give the gift of coffee with a mug, 500g of coffee.",
-  "../images/logonotext.png"),
+  "Give the gift of coffee with a thermos, 500g of coffee.",
+  "../images/giftset.png"),
 ];
 
 coffeeProducts.forEach(addItem);

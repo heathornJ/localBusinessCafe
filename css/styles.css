@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: "fjallaOne-regular";
-  src: url("fjallaone-regular-webfont.woff2") format("woff2"),
-    url("fjallaone-regular-webfont.woff") format("woff"),
+  src: url("../fonts/fjallaone-regular-webfont.woff2") format("woff2"),
+    url("../fonts/fjallaone-regular-webfont.woff") format("woff"),
     url("../fonts/FjallaOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
@@ -76,7 +76,7 @@ nav {
   height: 100vh;
   width: 0; /* 0 width - changes with JavaScript to open and close */
   position: fixed;
-  z-index: 1; /* Stay on top */
+  z-index: 99; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden;
@@ -114,6 +114,7 @@ nav li {
   color: var(--color1);
   text-decoration: none;
   transition: 0.3s;
+  z-index: 97;
 }
 
 nav #closebtn {
@@ -359,13 +360,6 @@ body.about {
   background-image: url(../images/coffeebackground.jpg);
 }
 
-#introduction {
-  margin: 1em auto;
-  width: 80%;
-  padding: 0.5em;
-  border-radius: 10px;
-}
-
 .about h1 {
   color: white;
 }
@@ -456,6 +450,7 @@ body.contact {
   font-family: "archivo_narrowregular";
   width: 100%;
   padding-left: 1em;
+  padding-right: 1.2em;
   color: var(--color1);
 }
 
@@ -728,6 +723,10 @@ body.menu {
   }
 
   /*Bottom banner of index*/
+
+  #index-bottom {
+    padding-bottom: 0;
+  }
 
   #index-bottom-background {
     padding-bottom: 2em;
