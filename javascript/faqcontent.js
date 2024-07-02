@@ -1,7 +1,7 @@
 const questionFactory = (question, answer) => {
   return {
     question,
-    answer
+    answer,
   };
 };
 
@@ -32,6 +32,10 @@ const questionArray = [
     "We're located at 123 Coffee Street, Coffee Town, C0 F33. You can find our gps locations at the bottom of this page."
   ),
   questionFactory(
+    "When are you open?",
+    "We're open from 7am to 7pm, Monday to Friday. We know it's important that you can get started early and grab that overtime when you need it!"
+  ),
+  questionFactory(
     "What if I have specific dietary requirements?",
     "We have a variety of options available that are suitable for omnivores, vegetarians, vegans, lactose intolerant, and gluten free diets. If you're unsure, please do notify our staff and we'll try our best to accomodate for you. While we try our best to avoid it, some of our products may contain nuts."
   ),
@@ -54,8 +58,7 @@ const questionArray = [
   questionFactory(
     "Are pets allowed in the cafe?",
     "While pets are not allowed inside the cafe, we have a designated pet-friendly outdoor seating area where you can enjoy your coffee with your furry friends."
-  )
+  ),
 ];
-
 
 questionArray.forEach(faq);
