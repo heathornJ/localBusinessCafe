@@ -127,7 +127,7 @@ nav #closebtn {
 
 /*index Page Styling*/
 body.index {
-  background-image: url(../images/coffeebackground.jpg);
+  background-image: url(../images/coffeebackground.webp);
 }
 
 #home-section {
@@ -357,7 +357,7 @@ body.index {
 /*about Page Styling*/
 
 body.about {
-  background-image: url(../images/coffeebackground.jpg);
+  background-image: url(../images/coffeebackground.webp);
 }
 
 .about h1 {
@@ -409,7 +409,7 @@ body.about {
 
 /*contact page styling*/
 body.contact {
-  background-image: url(../images/coffeebackground.jpg);
+  background-image: url(../images/coffeebackground.webp);
 }
 
 /* contact faq accordion styles - structure via https://www.freecodecamp.org/news/build-an-accordion-menu-using-html-css-and-javascript/ */
@@ -560,7 +560,7 @@ textarea {
 
 /*product page styling*/
 body.products {
-  background-image: url(../images/coffeebackground.jpg);
+  background-image: url(../images/coffeebackground.webp);
 }
 
 #products-background {
@@ -605,7 +605,7 @@ body.products {
 
 /*menu page styling*/
 body.menu {
-  background-image: url(../images/coffeebackground.jpg);
+  background-image: url(../images/coffeebackground.webp);
 }
 
 #menu-background {
