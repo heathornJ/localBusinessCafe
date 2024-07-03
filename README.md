@@ -94,6 +94,9 @@ To confirm the website was functional, responsive, and had the correct styling.
   ![A screenshot of contact.html on PageSpeed Inisghts. Performance: 36, Accessibility: 95, Best Practices: 100, SEO: 91](./images/speedtest05a.png)
   ![A screenshot of contact.html on PageSpeed Inisghts. Performance: 92, Accessibility: 100, Best Practices: 100, SEO: 91](./images/speedtest05b.png)
 
+
+- The JavaScript files have been tested using [https://jshint.com/](https://jshint.com/)and have only returned warnings regarding certain functionality being only available in ES6.
+  ![A screenshot of the jshint ](./images/jstest01.png)
 ## Deployment
 
 ### Deployment to GitHub Pages

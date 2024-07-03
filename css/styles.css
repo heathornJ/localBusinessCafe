@@ -22,6 +22,8 @@
 
 :root {
   --color1: #a63f3d;
+  --color2: #00000077;
+  --color3: #f9f9f9;
 }
 
 * {
@@ -69,7 +71,7 @@ li {
 .heading-container {
   width: 100%;
   padding: 1em 0;
-  background-color: #00000077;
+  background-color: var(--color2);
 }
 
 /*Navbar styling*/
@@ -134,7 +136,7 @@ body.index {
 
 #home-section {
   min-height: 100vh;
-  background-color: #00000077;
+  background-color: var(--color2);
 }
 
 #home-logo {
@@ -148,19 +150,19 @@ body.index {
 
 #index-bottom {
   padding: 5em 0;
-  background-color: #f9f9f9;
+  background-color: var(--color3);
 }
 
 /*Gallery Styling*/
 
 #home-gallery-background {
-  background-color: #00000077;
+  background-color: var(--color2);
   min-height: fit-content;
 }
 
 #home-gallery-section {
   padding-top: 0.1em;
-  background-color: #f9f9f9;
+  background-color: var(--color3);
 }
 
 #home-gallery-section h1 {
@@ -281,11 +283,11 @@ body.index {
 
 #shop-subsection-background {
   height: 60vh;
-  background-color: #00000077;
+  background-color: var(--color2);
 }
 
 #shop-subsection {
-  background-color: #f9f9f9;
+  background-color: var(--color3);
   height: 100%;
   padding: 2em 0;
 }
@@ -313,7 +315,7 @@ body.index {
 
 /*Bottom banner of index*/
 #index-bottom-background {
-  background-color: #00000077;
+  background-color: var(--color2);
 }
 
 #extra-info {
@@ -368,14 +370,14 @@ body.about {
 
 /*More Info Styling*/
 #more-info-background {
-  background-color: #00000077;
+  background-color: var(--color2);
   min-height: 100vh;
 }
 
 #more-info {
   width: 100%;
   padding: 0.2em 1em;
-  background-color: #f9f9f9;
+  background-color: var(--color3);
 }
 
 .about-article {
@@ -418,7 +420,7 @@ body.contact {
 
 #faq {
   padding: 0 1em 0.1em 1em;
-  background-color: #f9f9f9;
+  background-color: var(--color3);
 }
 
 #faq h2 {
@@ -496,7 +498,7 @@ body.contact {
 /*contact info and form styling*/
 
 #contact-background {
-  background-color: #00000077;
+  background-color: var(--color2);
   min-height: 100vh;
 }
 
@@ -504,7 +506,7 @@ body.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: var(--color3);
 }
 
 #contact-information {
@@ -566,7 +568,7 @@ body.products {
 }
 
 #products-background {
-  background-color: #00000077;
+  background-color: var(--color2);
   min-height: 100vh;
 }
 
@@ -577,7 +579,7 @@ body.products {
 .product-section {
   margin: 0 auto;
   padding: 1em 0;
-  background: #f9f9f9;
+  background: var(--color3);
 }
 
 .product-section h2 {
@@ -611,12 +613,12 @@ body.menu {
 }
 
 #menu-background {
-  background-color: #00000077;
+  background-color: var(--color2);
 }
 
 #menu {
   padding-bottom: 2em;
-  background: #f9f9f9;
+  background: var(--color3);
 }
 
 .menu h2 {
@@ -821,7 +823,7 @@ body.menu {
 
   #faq {
     padding: 0 0 0.1em 0;
-    background-color: #f9f9f9;
+    background-color: var(--color3);
   }
 
   #faq h2 {
