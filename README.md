@@ -66,20 +66,26 @@ To confirm the website was functional, responsive, and had the correct styling.
   - The webpage was also tested using Chrome on a Samsung Galaxy S22+:
     ![A screenshot of the webpage in a Chrome browser on a Samsung Galaxy S22+](./images/mobile01.jpg)
 
-- The website's responsiveness was tested using Media Genesis Responsive design checker [https://responsivedesignchecker.com/](https://responsivedesignchecker.com/)
-  ![A screenshot of the Media Genesis Responsive design checker]()
-  ![A screenshot of the Media Genesis Responsive design checker]()
-  ![A screenshot of the Media Genesis Responsive design checker]()
-  ![A screenshot of the Media Genesis Responsive design checker]()
+- The website's responsiveness was tested using Chrome Developer Tools [https://developer.chrome.com/docs/devtools](https://developer.chrome.com/docs/devtools)
+  ![A screenshot of the Chrome Developer Tools](./images/devtools01.png)
+  ![A screenshot of the Chrome Developer Tools](./images/devtools04.png)
+  ![A screenshot of the Chrome Developer Tools](./images/devtools02.png)
+  ![A screenshot of the Chrome Developer Tools](./images/devtools03.png)
 
-- The HTML file has passed HTML validity checks with W3C, but had some 'Info' pointers about trailing slashes on self-closing tags. These were removed to prevent any possible negative interactions.
-  ![A screenshot of the HTML validation test on W3C, showing a passed test with info warnings]()
-  ![A screenshot of the HTML validation test on W3C, showing a passed test with no warnings]()
+- The HTML files have passed HTML validity checks with W3C, but had some warnings about sections or articles without headings and info pointers about trailing slashes on self-closing tags. Sections or articles where it did not make sense to have a heading were turned into divs, trailing slashes will be removed before final commit as these are added by default with the formatter that is currently being used.
+  ![A screenshot of the HTML validation test on W3C for index.html, showing a passed test with no warnings](./images/htmlvalidationindex01.png)
+  ![A screenshot of the HTML validation test on W3C for about.html, showing a passed test with info pointers and a warning](./images/htmlvalidationabout01.png)
+  ![A screenshot of the HTML validation test on W3C for about.html, showing a passed test with no warnings](./images/htmlvalidationabout02.png)
+  ![A screenshot of the HTML validation test on W3C for contact.html, showing a passed test with no warnings](./images/htmlvalidationcontact01.png)
+  ![A screenshot of the HTML validation test on W3C for menu.html, showing a passed test with info pointers and warnings](./images/htmlvalidationmenu01.png)
+  ![A screenshot of the HTML validation test on W3C for menu.html, showing a passed test with no warnings](./images/htmlvalidationmenu02.png)
+  ![A screenshot of the HTML validation test on W3C for products.html, showing a passed test with no warnings](./images/htmlvalidationproducts01.png)
 
 - The CSS file has passed CSS validity checks with W3C.
-  ![A screenshot of the CSS validation test on "3C, showing a passed test with no warnings](./images/cssvalidation01.png)
 
-- ## The website has been tested for performance, accessibility, best practice, and SEO using [https://pagespeed.web.dev/](https://pagespeed.web.dev/).
+  ![A screenshot of the CSS validation test on W3C, showing a passed test with no warnings](./images/cssvalidation.png)
+
+- The website has been tested for performance, accessibility, best practice, and SEO using [https://pagespeed.web.dev/](https://pagespeed.web.dev/).
 
 ## Deployment
 
