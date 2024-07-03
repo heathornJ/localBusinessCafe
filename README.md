@@ -86,6 +86,13 @@ To confirm the website was functional, responsive, and had the correct styling.
   ![A screenshot of the CSS validation test on W3C, showing a passed test with no warnings](./images/cssvalidation.png)
 
 - The website has been tested for performance, accessibility, best practice, and SEO using [https://pagespeed.web.dev/](https://pagespeed.web.dev/).
+  ![A screenshot of index.html on PageSpeed Inisghts. Performance: 86, Accessibility: 100, Best Practices: 100, SEO: 91](./images/speedtest01.png)
+  ![A screenshot of about.html on PageSpeed Inisghts. Performance: 98, Accessibility: 100, Best Practices: 100, SEO: 91](./images/speedtest02.png)
+  ![A screenshot of contact.html on PageSpeed Inisghts. Performance: 89, Accessibility: 100, Best Practices: 78, SEO: 91](./images/speedtest03a.png)
+  ![A screenshot of contact.html on PageSpeed Inisghts. Performance: 99, Accessibility: 100, Best Practices: 100, SEO: 91](./images/speedtest03b.png)
+  ![A screenshot of menu.html on PageSpeed Inisghts. Performance: 79, Accessibility: 100, Best Practices: 100, SEO: 90](./images/speedtest04.png)
+  ![A screenshot of contact.html on PageSpeed Inisghts. Performance: 36, Accessibility: 95, Best Practices: 100, SEO: 91](./images/speedtest05a.png)
+  ![A screenshot of contact.html on PageSpeed Inisghts. Performance: 92, Accessibility: 100, Best Practices: 100, SEO: 91](./images/speedtest05b.png)
 
 ## Deployment
 
@@ -103,4 +110,9 @@ Jamie Heathorn
 ## Credits
 
 - Inspiration:
+
+  - Design ideas [https://www.sitebuilderreport.com/inspiration/cafe-coffee-shop-websites](https://www.sitebuilderreport.com/inspiration/cafe-coffee-shop-websites) & [https://www.costa.co.uk/](https://www.costa.co.uk/)
   - Favicon created using [https://favicon.io/favicon-generator/](https://favicon.io/favicon-generator/)
+
+- Images sourced through [Canva](https://www.canva.com/) Pro Membership and [Unsplash](https://unsplash.com/)
+- Logo created with [https://adobe.com/express/create/logo](https://adobe.com/express/create/logo)
